@@ -1,0 +1,47 @@
+<header style="width: 100%; display: flex; justify-content: space-between">
+  <h1>แก้ไขหมายเลข</h1>
+</header>
+<hr />
+<article>
+  <form method="post">
+    <input type="hidden" name="id" value="<?=$data['id']?>" />
+    <table>
+      <tr>
+        <td><label for="number">ลำดับชุด</label></td>
+        <td>
+          <select name="number" id="number" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="value">หมายเลข</label></td>
+        <td>
+          <input
+            type="text"
+            name="value"
+            id="value"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="title">ชื่อ</label></td>
+        <td>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="submit">บันทึก</button></td>
+      </tr>
+    </table>
+  </form>
+</article>

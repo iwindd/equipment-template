@@ -1,0 +1,68 @@
+<header style="width: 100%; display: flex; justify-content: space-between">
+  <h1>เพิ่มครุภัณฑ์</h1>
+</header>
+<hr />
+<article>
+  <form method="post">
+    <table>
+      <tr>
+        <td><label for="works">งาน</label></td>
+        <td>
+          <select name="works" id="works" required>
+            <option value="0">กรุณาเพิ่มฝ่าย/งาน</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="tile">ชื่อครุภัณฑ์</label></td>
+        <td>
+          <input
+            type="text"
+            placeholder="ครุภัณฑ์"
+            name="title"
+            id="title"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="tile">สถานะ</label></td>
+        <td>
+          <select name="status" id="status" required>
+            <option value="using">ใช้งาน</option>
+            <option value="selling">จำหน่าย</option>
+            <option value="repair">ชำรุด</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="location">สถานที่</label></td>
+        <td>
+          <select name="location" id="location" required>
+            <option value="0">กรุณาเพิ่มฝ่าย/งาน</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="code1">หมายเลข</label></td>
+        <td>
+          <select name="code1" id="code1" required>
+            <option value="0">กรุณาเพิ่มหมายเลขชุดที่ 1</option>
+          </select>
+          <select name="code2" id="code2" required>
+            <option value="0">กรุณาเพิ่มหมายเลขชุดที่ 2</option>
+          </select>
+          <select name="code3" id="code3" required>
+            <option value="0">กรุณาเพิ่มหมายเลขชุดที่ 3</option>
+          </select>
+          <select name="code4" id="code4" required>
+            <option value="0">กรุณาเพิ่มหมายเลขชุดที่ 4</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="submit">เพิ่มรายการ</button></td>
+      </tr>
+    </table>
+  </form>
+</article>

@@ -1,0 +1,19 @@
+<header style="width: 100%; display: flex; justify-content:space-between;">
+  <h1>แก้ไขฝ่าย/งาน</h1>
+</header>
+<hr>
+<article>
+  <form method="post">
+
+    <input type="hidden" name="id" value="<?= $data['id'] ?>">
+    <table>
+      <tr>
+        <td><label for="department">แผนก</label></td>
+        <td><input type="text" placeholder="แผนก" value="<?= $data['title'] ?>" name="department" id="department"></td>
+      </tr>
+      <tr>
+        <td colspan="2"> <button type="submit">บันทึก</button></td>
+      </tr>
+    </table>
+  </form>
+</article>
